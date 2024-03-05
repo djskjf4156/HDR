@@ -79,9 +79,6 @@ psnr_L_sum = 0
 ssim_L_sum = 0
 ssim_u_sum = 0
 
-a = time.time()
-c = 0
-
 for scene in range(len(list)):
     expoTimes = ReadExpoTimes(os.path.join(scene_directory, list[scene], 'exposure.txt'))
     imgs = ReadImages(list_all_files_sorted(os.path.join(scene_directory, list[scene]), '.tif'))
